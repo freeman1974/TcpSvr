@@ -7,7 +7,7 @@ LDFLAG=
 CFLAG= -Wno-deprecated -DBNO=\"$(DATE)\" -std=c++11
 
 INC= -I./include/json -I./include
-LIBS=  -lpthread -L./lib/ -lZLToolKit
+LIBS=  -lpthread ./lib/libZLToolKit.a
 
 EXEC = TcpServer
 OBJS = tcpsvr.o
